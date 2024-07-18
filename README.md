@@ -4,7 +4,10 @@
 Answer the following questions from the Chapter 2 reading from your textbook. Be complete with your answers. You may work on these questions with one or two other partners, but all students must submit the document individually in their own repositories along with each student's name documented with the submission.
 
 1. What is a three-tiered client-server architecture?
+  A three-tiered client-server architecture is an organization where the system is divided into three distinct layers, each running on a separate machine: the client, the application server, and the database server. The client interacts with the application server, which processes the requests and interacts with the database server to retrieve or store data.
 2. What is the difference between a vertical distribution and a horizontal distribution?
+  Vertical Distribution: This involves dividing distributed applications into three logical layers (presentation, application, and data) and running the components from each layer on different servers (machines)
+  Horizontal Distrbution: This involves splitting a client or server into logically equivalent parts, each operating on its own share of the complete data set, effectively distributing the load and functionality across multiple nodes
 3. If a client and a server are placed far apart, we may see network latency dominating overall performance. How can we tackle this problem?
 4. Consider a chain of processes $P_{1}, P_{2}, \ldots, P_{n}$ implementing a multitiered client-server architecture. Process $P_{i}$ is client of process $P_{i}+1$, and $P_{i}$ will return a reply to $P_{i}-1$ only after receiving a reply from $P_{i}+1$. What are the main problems with this organization when taking a look at the request-reply performance at process $P_{1}$?
 5. In a structured overlay network, messages are routed according to the topology of the overlay. What is an important disadvantage of this approach?
